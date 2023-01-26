@@ -8,15 +8,62 @@
     <meta name="author" content="Zachary Wyeth">
     <meta name="description" content="Week 3 Demo">
     
-    <title>Week 3 Demo | Home<title>
+    <title>Week 3 Demo | Home</title>
+
+    <style>
+        /*write in CSS here*/
+
+        /*selecting by tag type*/
+
+        div {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        #wrapper{
+            background-color: darkgray;
+            width: 900px;
+            margin: auto;
+
+
+        }
+
+        .fancy-font {font-family: trebuchet, sans-serif;
+        }
+
+        .border{
+            border: 1px solid maroon;
+        }
+
+        #nav{
+            border: 3px solid maroon;
+            text-align: center;
+        }
+
+        .pic{
+            width: 500px;
+            padding: 5px;
+            box-shadow: 0 0 8px black;
+            margin-left: auto;
+            margin-right: auto;
+
+
+        }
+    </style>
+
+
+
 </head>
-<body>
+
+
+<body style="background-color: rgb(192,191,191);">
 
     <!--Building a mainframe: reusable HTML structure for multi pages-->
 
     <div id="wrapper">
         <div id="header" class="border">
-            <h1><em>The Last of Us (HBO)</em></h1>
+            <h1 class="fancy-font"><em>The Last of Us (HBO)</em></h1>
 
 
         </div><!--#HEADER-->
@@ -31,16 +78,16 @@
             <br>
             <!--external link: outside of the website / domain; needs to be an ABSOLUTE path (starts with http)-->
             
-            <a href="">| OFFICIAL HBO SITE |</a>
+            <a href="http://www.hbo.com/the-last-of-us" target="_blank">| OFFICIAL HBO SITE |</a>
 
             <!--In page jump link: jumps to a section of this current page-->
-            <a href="">| BOTTOM OF PAGE |</a>
+            <a href="#footer">| BOTTOM OF PAGE |</a>
 
         </div><!--#NAV-->
 
         <div id="maincontent" class="border">
             
-            <h2>content area for the <b>HOME</b> page.</h2>
+            <h2 class="fancy-font">content area for the <b>HOME</b> page.</h2>
 
 
 
@@ -51,6 +98,10 @@
 
 
             <p>&copy; Zachary Wyeth | SE111.22 | Winter 2023</p>
+
+
+            <br>
+            <a href="index.html#header">go to HOME page header</a>
         </div><!--#FOOTER-->
 
 
