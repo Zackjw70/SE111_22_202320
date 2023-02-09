@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="Author" content="Zachary Wyeth">
+    <meta name="description" content="Week 5 demo page">
+    
+   
+    <title>Week 5 | Demo</title>
+
+    <style>
+        .center{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <h1>Basic form Demo</h1>
+
+
+    <h2>Form w/o Table [boooooo BAD!]</h2>
+
+
+    <form method="get" action="confirm.html">
+
+        <!--labels are used to math with input elements
+        
+            for attribute value of <label> MATCHES name attribute and id attribute <input>
+        
+        
+        -->
+
+        <!--FIRST NAME-->
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname">
+
+        <br>
+        <!--LAST NAME-->
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname">
+
+        <br>
+        <!--EMAIL-->
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required>
+        <br>
+
+
+
+        <!--SUBMIT BUTTON-->
+        <input type="submit" value="SUBMIT!">
+
+
+    </form>
+
+    <hr>
+
+    <h2>Form with a table [YAYYYYYYYYY :D]</h2>
+
+    <form><!--form element holds everything-->
+        <table>
+            <tbody><!--REQUIRED FOR TABLE-->
+
+                <!--organize and develop row by row-->
+                <!--If made well first time can be reused-->
+                
+                <!--NEW ROW ____ -->
+                <tr>
+                    <!--LABEL-->
+                    <td>
+                        <label for="first">First Name:</label>
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+                        <input type="text" name="first" id="first">
+                    </td>
+                </tr>
+                <tr>
+                    <!--LABEL-->
+                    <td>
+                        <label for="last">Last Name:</label>
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+                        <input type="text" name="last" id="last">
+                    </td>
+                </tr>
+                <tr>
+                    <!--LABEL-->
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+                        <input type="text" name="email" id="email" placeholder="email@extension">
+                    </td>
+                </tr>
+                
+                <!--TEXT BOX-->
+                <tr>
+                    <!--LABEL-->
+                    <td>
+                        <label for="comments">Comments</label>
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+                        <textarea name="comments" id="comments" placeholder="Leave your comments here..." rows="4" cols="25" style="font-family: fantasy;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <!--LABEL-->
+                    <td>
+                        <label for="favecolor">Pick Your Favorite Color:</label>
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+                        <select name="favecolor">
+                            <option value="red">RED</option>
+                            <option value="yellow">YELLOW</option>
+                            <option value="green">GREEN</option>
+                            <option value="blue">BLUE</option>
+
+
+
+
+                        </select>
+                    </td>
+
+                </tr>
+
+                <!--RADIO BUTTON multiple choice small circular buttons; restrict user to one out of the set-->
+                <tr>
+                    <!--LABEL-->
+                    <td>
+                        <label for="study">Program of Study:</label>
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+                        <input type="radio" name="study" value="SE">Software Engineering<br>
+                        <input type="radio" name="study" value="CYB">Cyber Security<br>
+                        <input type="radio" name="study" value="NE">Networking<br>
+                        <input type="radio" name="study" value="WD">Web Development<br>
+                    </td>
+
+                </tr>
+                <!--CHECKBOXES: MULTIPLE REPLIES-->
+                <tr>
+                    <!--LABEL-->
+                    <td>
+                        <label for="vehicle">Select your Vehicle(s)</label>
+                    </td>
+
+                    <!--INPUT-->
+                    <td style="padding-top: 20px; padding-bottom: 20px;">
+                        <input type="checkbox" name="vehicle1" value="car">Car<br>
+                        <input type="checkbox" name="vehicle2" value="roci">Rocinante<br>
+                        <input type="checkbox" name="vehicle3" value="mech">Gundam Warrior <br>
+                        <input type="checkbox" name="vehicle4" value="motorcycle">Motorcycle <br>
+                        <input type="checkbox" name="vehicle5" value="bike">Bicycle<br>
+                        <input type="checkbox" name="vehicle6" value="dragon">Drogon<br>
+                        <input type="checkbox" name="vehicle7" value="horse">Roach<br>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <!--LABEL-->
+                    <td>
+                        <label for="date">Date:</label>
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+                        <input type="date" name="date" id="date" required>
+                    </td>
+
+                </tr>
+
+                <!--SUBMIT BUTTON-->
+                <tr>
+                    <!--LABEL-->
+                    <td>
+                        
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+                        <input type="submit" value="Submit!">
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+    
+</body>
+</html>
