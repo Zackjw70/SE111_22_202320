@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="Author" content="Zachary Wyeth">
+    <meta name="Description" content="Week 6 Lab Pay Calculator">
+    
+    
+    <title>Week 6 | Pay Calculator</title>
+</head>
+<body>
+    <h1>Week 6 | Pay Calculator</h1>
+    <script>
+        var taxrate = .2
+        var hours = Number(prompt(`Enter your hours worked`))
+        var wage = Number(prompt(`Enter your hourly wage`))
+
+        var gross = hours * wage
+        var tax = gross * taxrate
+        var net = gross - tax
+
+        console.log(`Gross Pay is: ${gross.toFixed(2)}`)
+        console.log(`Tax amount is: ${tax.toFixed(2)}`)
+        console.log(`Net Pay is: ${net.toFixed(2)}`)
+        alert(`Your Gross pay is: $${gross.toFixed(2)} \nYour Tax Amount is: $${tax.toFixed(2)} \nYour Net Pay is: $${net.toFixed(2)}`)
+
+
+    </script>
+    
+</body>
+</html>
